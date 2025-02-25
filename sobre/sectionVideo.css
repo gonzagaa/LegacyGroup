@@ -1,0 +1,10 @@
+#video {
+    overflow: hidden;
+    position: relative;
+}
+
+#video .video img,
+#video .video video {
+    width: 100%;
+    border-radius: 2rem;
+}

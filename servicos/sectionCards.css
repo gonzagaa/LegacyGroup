@@ -1,0 +1,122 @@
+#cards {
+    position: relative;
+    overflow: hidden;
+}
+
+#cards .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#cards .cards .card {
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+}
+
+#cards .cards .card img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+
+    transition: all 300ms ease-in-out;
+    filter: brightness(.7);
+}
+
+#cards .cards .card:hover img.bg {
+    transform: scale(1.1);
+}
+
+#cards .cards .card::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    z-index: 1;
+    background: linear-gradient(to top, #000 10%, transparent);
+    left: 0;
+    top: 0;
+}
+
+#cards .cards .card .text {
+    margin-top: 40%;
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    padding-bottom: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+#cards .cards .card .text h2 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #fff;
+    font-family: 'Roaster', sans-serif;
+    margin-bottom: 1rem;
+}
+
+#cards .cards .card .text .topics .topic {
+    display: flex;
+    align-items: start;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+#cards .cards .card .text .topics .topic ion-icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+#cards .cards .card .text .topics .topic p {
+    color: #c1c1c1;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 1080px) {
+    section#cards .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#cards .card {
+        height: 100%;
+    }
+
+    section#cards .wrapper {
+        width: 100%;
+    }
+
+    section#cards .cards .card .text {
+        padding: 5rem;
+        margin-top: 60%;
+    }
+
+    /* section#cards .cards .card:nth-child(3) .text {
+        margin-top: 50%;
+    } */
+
+    section#cards .cards .card .text h2 {
+        font-size: 2.5rem;
+    }
+
+    section#cards .cards .card .text .topics .topic ion-icon {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        opacity: .6;
+    }
+}

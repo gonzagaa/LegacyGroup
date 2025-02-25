@@ -1,0 +1,130 @@
+#cidadania {
+    overflow: hidden;
+    position: relative;
+    padding-block: 10rem;
+}
+
+#cidadania img.bg {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#cidadania img.bg.mobile {
+    filter: brightness(.6); 
+}
+
+#cidadania::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #111111a8, transparent);
+    z-index: 1;
+}
+
+#cidadania .content {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+#cidadania img.bg.desktop {
+    display: none;
+}
+
+#cidadania header {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    width: 100%;
+}
+
+#cidadania header h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+#cidadania header .topics {
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+#cidadania header .topics .topic {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: start;
+}
+
+#cidadania header .topics .topic ion-icon {
+    font-size: 2rem;
+    min-width: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    min-height: 1.5rem;
+    color: #B48642;
+    background: #404e75a6;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+
+#cidadania header .topics .topic p {
+    color: #bababa;
+    font-weight: 500;
+    margin-top: -.5rem;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 1080px) {
+    section#cidadania img.bg.desktop {
+        display: inherit;
+        filter: brightness(.6);
+    }
+
+    section#cidadania img.bg.mobile {
+        display: none;
+    }
+
+    section#cidadania::before {
+        background: linear-gradient(to left, #111111b3, transparent);
+    }
+    
+
+    section#cidadania .content {
+        align-items: right;
+        justify-content: right;
+    }
+
+    section#cidadania header {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 70%;
+    }
+
+    section#cidadania header .topics {
+        align-items: end;
+    }
+
+    section#cidadania header .topics .topic {
+        flex-direction: row-reverse;
+    }
+
+    section#cidadania header .topics .topic p {
+        text-align: right;
+        font-size: 1.6rem;
+    }
+
+    section#cidadania header .topics .topic ion-icon {
+        transform: rotate(180deg);
+    }
+}

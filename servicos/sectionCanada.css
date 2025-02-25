@@ -1,0 +1,9 @@
+#porque .cards .card {
+    text-align: center;
+}
+
+@media (min-width: 1080px) {
+    section#porque .cards .card {
+        text-align: left;
+    }
+}

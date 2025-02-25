@@ -1,0 +1,131 @@
+#porque {
+    overflow: hidden;
+    position: relative;
+}
+
+#porque .cards {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#porque .cards .card {
+    text-align: left;
+    position: relative;
+    padding-block: 2rem;
+    padding-inline: .5rem;
+}
+
+#porque .cards .card::after {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    height: 100%;
+    width: 3px;
+    top: 0;
+    background: var(--gradient);
+}
+
+#porque .cards .card h3 {
+    font-size: 1.6rem;
+    color: #ffffffe9;
+
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 300;
+}
+
+#porque .cards .card h3 ion-icon {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+#porque img.mobile {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    mask-image: linear-gradient(to bottom, #000 60%, transparent);
+}
+
+#porque a button {
+    margin-top: 3rem;
+}
+
+#porque .image img.desktop {
+    margin-top: 3rem;
+    border-radius: 2rem;
+    display: inherit;
+    width: 100%;
+    aspect-ratio: 16/16;
+    object-fit: cover;
+}
+
+@media (min-width: 1080px) {
+    section#porque .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    section#porque .content header {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    section#porque .cards {
+        width: 100%;
+        gap: 0;
+    }
+
+    section#porque .card {
+        width: 100%;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 1rem;
+    }
+
+    section#porque .cards .card h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    section#porque .card p {
+        padding-left: 1rem;
+        position: absolute;
+        transform: translateY(50%);
+        opacity: 0;
+
+        transition: all 700ms ease-in-out;
+    }
+
+    section#porque .card:hover p {
+        position: initial;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    section#porque .card:hover {
+        border: 1px solid #b992574d;
+        background: linear-gradient(130deg, #111111, #101010);
+    }
+
+
+    section#porque .image img.desktop {
+        margin-top: 0;
+        border-radius: 2rem;
+        display: inherit;
+        width: 100%;
+        aspect-ratio: 16/16;
+        object-fit: cover;
+    }
+}

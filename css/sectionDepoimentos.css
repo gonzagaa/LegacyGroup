@@ -1,0 +1,229 @@
+#depoimentos {
+    overflow: hidden;
+    position: relative;
+}
+
+#depoimentos img.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#depoimentos header h2 span {
+    font-weight: 700;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#depoimentos header {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+#depoimentos .cards {
+    border-radius: 1rem;
+
+    padding-bottom: 5rem;
+}
+
+#depoimentos .cards .card {
+    position: relative;
+    user-select: none;
+}
+
+#depoimentos .cards .card {
+    width: 100%;
+    aspect-ratio: 9/16;
+    border: 2px solid var(--primary-color);
+    background: linear-gradient(130deg, #000, #080601);
+    object-fit: cover;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+#depoimentos .cards .card video {
+    width: 100%;
+    height: 100%;
+}
+
+.custom-shape-divider-top-1738367723 {
+    position: absolute;
+    top: -.1rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1738367723 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 58px;
+}
+
+.custom-shape-divider-top-1738367723 .shape-fill {
+    fill: var(--bg-black);
+}
+
+.custom-shape-divider-top-1736976335 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 10;
+}
+
+.custom-shape-divider-top-1736976335 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 20px;
+}
+
+.custom-shape-divider-top-1736976335 .shape-fill {
+    fill: var(--bg-black);
+}
+
+.custom-shape-divider-bottom-1736980111 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 10;
+}
+
+.custom-shape-divider-bottom-1736980111 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 20px;
+}
+
+.custom-shape-divider-bottom-1736980111 .shape-fill {
+    fill: var(--bg-black);
+}
+
+#depoimentos .wrapper.carrossel {
+    position: relative;
+}
+
+section#depoimentos .swiper-pagination-bullet {
+    background-color: #5151513e; 
+    opacity: 1; 
+    width: 13px;
+    height: 13px;
+  }
+  
+section#depoimentos .swiper-pagination-bullet-active {
+    background-color: #B48642; 
+}
+
+section#depoimentos .swiper-button-next {
+    background: #382300c8;
+    padding: 4rem;
+    right: -14%;
+    transform: scale(.6);
+    top: 43%;
+    color: #B48642;
+    border-radius: 2rem;
+}
+  
+section#depoimentos .swiper-button-prev {
+    background: #382300c8;
+    border-radius: 2rem;
+    padding: 4rem;
+    transform: scale(.6);
+    top: 43%;
+    left: -14%;
+    color: #B48642;
+}
+
+body section#depoimentos .wrapper .swiper.mySwiper4 {
+    overflow: inherit;
+}
+
+
+@media (min-width: 1080px) {
+
+    /* section#depoimentos .wrapper.carrossel {
+        width: 100%;
+        padding-inline: 0;
+    } */
+
+    section#depoimentos header {
+        margin-bottom: 5rem;
+        margin-top: 3rem;
+    }
+
+    body section#depoimentos .wrapper .swiper.mySwiper4 {
+        overflow: inherit;
+    }
+
+    section#depoimentos .content .cards {
+        overflow: initial;
+        border-radius: 0;
+    }
+
+    section#depoimentos .swiper {
+        position: relative;
+    }
+
+    section#depoimentos .swiper:before,
+    section#depoimentos .swiper:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 10rem;
+        height: 100%;
+        z-index: 2;
+    }
+    
+    /* section#depoimentos .swiper:before {
+        left: 0;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0), #1f1f1fac);
+    }
+    
+    section#depoimentos .swiper:after {
+        right: 0;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0), #1f1f1fac);
+    } */
+
+    section#depoimentos .wrapper.carrossel {
+        position: relative;
+    }
+
+    section#depoimentos img.logo {
+        display: inherit;
+        position: absolute;
+    }
+
+    section#depoimentos img.logo.um {
+        width: 4%;
+        right: -2%;
+        z-index: 1;
+        bottom: -5rem;
+
+        animation: Bg infinite ease-in-out 5s;
+        
+    }
+
+    section#depoimentos img.logo.dois {
+        width: 15%;
+        opacity: .05;
+        filter: blur(3px);
+        z-index: 0;
+        top: -20%;
+        left: -5%;
+    }
+}

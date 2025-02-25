@@ -1,0 +1,22 @@
+#bandeiras {
+    overflow: hidden;
+    position: relative;
+}
+
+#bandeiras .cards {
+    margin-top: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#bandeiras .cards .card img {
+    width: 100%;
+}
+
+@media (min-width: 1080px) {
+    section#bandeiras .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

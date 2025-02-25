@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Legacy Imigra</title>
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/roaster" rel="stylesheet">
+
+    <link
+      rel="shortcut icon"
+      href="./assets/icon stratum.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.14/dist/lenis.css">
+  </head>
+  <body id="body" class="smooth-scroll-wrapper">
+    <nav id="navigation" class="">
+      <div class="wrapper">
+        <a class="logo" href="#home">
+          <img src="./assets/Logo Legacy-04 3.png" alt="" />
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li><a onclick="closeMenu()" href="#home">Home</a></li>
+            <li><a onclick="closeMenu()" href="./sobre/index.html">Quem somos</a></li>
+            <li><a onclick="closeMenu()" href="./servicos/index.html">Serviços</a></li>
+            <li><a onclick="closeMenu()" href="./contato/index.html">Contato</a></li>
+          </ul>
+
+          <a href="#home"
+            ><img
+              class="logo"
+              onclick="closeMenu()"
+              src="./assets/Logo Legacy-04 3.png"
+              alt=""
+          /></a>
+        </div>
+
+        <button
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          onclick="openMenu()"
+          class="open-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 20H30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 12H30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M18 28L30 28"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button
+          aria-expanded="true"
+          aria-label="Fechar menu"
+          onclick="closeMenu()"
+          class="close-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M30 10L10 30M10 10L30 30"
+              stroke="#FFFAF1"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <header class="header" id="home">
+      <img class="bg" src="./assets/bg legacy.webp" alt="" />
+      <div class="blush um"></div>
+      <div class="blush dois"></div>
+
+      <div class="wrapper">
+        <div class="content">
+          <div class="text">
+            <h1 data-aos="fade-up">Conquiste seu futuro internacional com a <span>Legacy Group</span></h1>
+            <div data-aos="fade-up" class="buttons">
+              <a target="_blank" href="https://wa.link/o1fnr5"><button>Fale com um especialista</button></a>
+            </div>
+
+            <div data-aos="fade-up" class="depoimentos">
+              <img src="./assets/depoimentos.png" alt="">
+              <p>+20.000 clientes satisfeitos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="image">
+                <img class="desktop" src="./assets/desktop stratum.webp" alt="">
+                <img class="mobile" src="./assets/mobile stratum.webp" alt="">
+        </div> -->
+    </header>
+
+    <section id="divisa">
+      <div class="wrapper">
+        <div data-aos="flip-up" class="content">
+          <div class="cards">
+            <div class="card">
+              <img src="./assets/1 divisa.png" alt="">
+              <p>EUA E CANADÁ
+                VISTOS & SOLUÇÕES IMIGRATÓRIAS</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/2 divisa.png" alt="">
+              <p>CIDADANIA
+                EUROPEIA</p>
+            </div>
+
+            <div class="card">
+              <img src="./assets/3 divisa.png" alt="">
+              <p>CONSÓRCIO
+                & CARTÓRIO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="porque">
+        <div class="wrapper">
+            <div class="content">
+                <header data-aos="fade-up-right">
+                    <h2>O <span>caminho seguro</span> para sua conquista</h2>
+
+                    <div class="cards">
+                        <div class="card">
+                            <h3><ion-icon name="chevron-forward-outline"></ion-icon>Caminho legal para viver, trabalhar e  investir nos EUA e Canadá</h3>
+                            <p>Descubra um processo seguro e estruturado que possibilita a sua residência, emprego e investimentos nesses países, contando com orientações jurídicas e estratégicas.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3><ion-icon name="chevron-forward-outline"></ion-icon>Passaporte europeu para ampliar suas oportunidades globais.</h3>
+                            <p>Obtenha a cidadania europeia e abra portas para uma mobilidade internacional maior, facilitando acesso a mercados de trabalho, educação e investimentos por toda a União Europeia.</p>
+                        </div>
+
+                        <div class="card">
+                            <h3><ion-icon name="chevron-forward-outline"></ion-icon>Regularização documental com suporte de especialistas.</h3>
+                            <p>Garanta a conformidade da sua documentação com o apoio de profissionais qualificados, assegurando que todos os trâmites legais estejam em ordem para sua jornada internacional.</p>
+                        </div>
+                    </div>
+
+                    <a href="#"><button>Fale com um especialista</button></a>
+                </header>
+
+                <div data-aos="fade-up-left" class="image">
+                    <img class="desktop" src="./assets/caminhoseguro.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="passo">
+      <div data-aos="fade-up" class="wrapper">
+        <div class="content">
+          <img class="bg" src="./assets/image proximo passo.webp" alt="">
+          <div class="vazio"></div>
+          <header data-aos="fade-up-left">
+            <h2>Seu próximo passo</h2>
+            <div class="topics">
+              <div class="topic">
+                <div class="title">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                  <h3>Agende uma consulta com nossos especialistas</h3>
+                </div>
+                <p>Dê o primeiro passo para transformar seu futuro com a orientação de profissionais experientes, prontos para analisar seu caso e apresentar as melhores soluções.</p>
+              </div>
+
+              <div class="topic">
+                <div class="title">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                  <h3>Receba um plano personalizado para seu caso</h3>
+                </div>
+                <p>Cada história é única, e seu processo também deve ser. Nossos especialistas elaboram um plano estratégico sob medida para atender às suas necessidades e objetivos.
+                </p>
+              </div>
+
+              <div class="topic">
+                <div class="title">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                  <h3>Conte com suporte total da Legacy do início ao fim</h3>
+                </div>
+                <p>Esteja tranquilo em cada etapa do seu processo! Nossa equipe acompanha você do começo ao fim, garantindo segurança, transparência e eficiência na sua jornada.</p>
+              </div>
+            </div>
+
+            <a href="#"><button>Fale com um especialista</button></a>
+          </header>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos">
+      <div class="custom-shape-divider-bottom-1736980111">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+      <div class="content">
+          <div data-aos="fade-up" class="wrapper header">
+              <header>
+                  <h2>Histórias de <span>sucesso</span></h2>
+              </header>
+          </div>
+
+          <div data-aos="fade-left" class="wrapper carrossel">
+              <div class="swiper mySwiper4">
+                  <div class="cards swiper-wrapper">
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/1.webp" controls>
+                          <source src="./assets/depoimentos/1.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/2.webp" controls>
+                          <source src="./assets/depoimentos/2.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/3.webp" controls>
+                          <source src="./assets/depoimentos/3.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/4.webp" controls>
+                          <source src="./assets/depoimentos/4.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/5.webp" controls>
+                          <source src="./assets/depoimentos/5.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/6.webp" controls>
+                          <source src="./assets/depoimentos/6.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/7.webp" controls>
+                          <source src="./assets/depoimentos/7.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/8.webp" controls>
+                          <source src="./assets/depoimentos/8.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/9.webp" controls>
+                          <source src="./assets/depoimentos/9.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/10.webp" controls>
+                          <source src="./assets/depoimentos/10.mp4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+
+                      <div class="card swiper-slide">
+                        <video poster="./assets/depoimentos/capas/11.webp" controls>
+                          <source src="./assets/depoimentos/11.MP4" type="video/mp4">
+                          Seu navegador não suporta o vídeo.
+                        </video>                        
+                      </div>
+                  </div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+              </div>
+          </div>
+       </div>
+
+    </section>
+
+    <section id="beneficios">
+      <img class="bg" src="./assets/mapa.webp" alt="">
+      <div class="wrapper">
+        <div class="content">
+          <header data-aos="fade-up">
+            <h2>A <span>maior</span> assessoria imigratória do mundo!</h2>
+          </header>
+
+          <div class="cards">
+            <div data-aos="fade-up-left" class="card">
+              <img src="./assets/beneficios/aprovacao.png" alt="">
+              <h3 class="animated-number" data-value="99">0%</h3>
+              <p>Aprovações Green Card</p>
+            </div>
+
+            <div data-aos="fade-up-left" class="card">
+              <img src="./assets/beneficios/suporte.png" alt="">
+              <h3 class="animated-number" data-value="100">0%</h3>
+              <p>Atendimento Humanizado</p>
+            </div>
+
+            <div data-aos="fade-up-left" class="card">
+              <img src="./assets/beneficios/vidas.png" alt="">
+              <h3 class="animated-number" data-value="10000">0</h3>
+              <p>Vidas Impactadas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="wrapper">
+          <div class="content">
+              <img class="logo" src="./assets/logo preto.png" alt="">
+
+              <div class="navigation">
+                  <h3>Navegação</h3>
+                  <p><a onclick="closeMenu()" href="#home">Home</a></p>
+                  <p><a onclick="closeMenu()" href="./sobre/index.html">Quem somos</a></p>
+                  <p><a onclick="closeMenu()" href="./servicos/index.html">Serviços</a></p>
+                  <p><a onclick="closeMenu()" href="./contato/index.html">Contato</a></p>
+              </div>
+  
+              <div class="contato">
+                  <h3>Conecte-se conosco</h3>
+                  <p>legacygroupbrasil@gmail.com</p>
+                  <p><a target="_blank" href="tel:689-307-5514">(689) 307-5514</a></p>
+              </div>
+  
+              <div class="redes-sociais">
+                  <h3>Social</h3>
+                  <div class="icons">
+                      <a target="_blank" href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+                      <a target="_blank" href="https://www.instagram.com/legacygroup_brasil?igsh=MWg0OXA3ZnFqbTNweQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+    <script>
+      // Initialize Lenis with options
+      const lenis = new Lenis({
+      smooth: true,            // Ativa o scroll suave
+      duration: 1.1,           // Define a duração do scroll (maior valor deixa mais lento)
+      easing: (t) => 1 - Math.pow(1 - t, 4) // Função de easing para suavidade
+      });
+
+      // Listen for the scroll event and log the event data
+      lenis.on('scroll', (e) => {
+      console.log(e);
+      });
+
+      // Use requestAnimationFrame to continuously update the scroll
+      function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+  </script>
+  </body>
+</html>

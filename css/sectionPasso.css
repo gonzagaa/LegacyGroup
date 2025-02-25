@@ -1,0 +1,123 @@
+#passo {
+    overflow: hidden;
+    position: relative;
+}
+
+#passo img.bg {
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    left: 0;
+    height: 120%;
+    object-fit: cover;
+
+    mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+
+#passo header {
+    padding: 2rem;
+    padding-block: 4rem;
+    border-radius: 2rem;
+    
+
+    backdrop-filter: blur(13px) saturate(150%);
+    -webkit-backdrop-filter: blur(13px) saturate(150%);
+    background-color: rgba(255, 255, 255, 0.39);
+    border: 2px solid var(--primary-color);
+}
+
+#passo header h2 {
+    color: #000;
+    font-size: 2.5rem;
+}
+
+#passo header .topics {
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    width: 100%;
+}
+
+#passo header .topics .topic {
+    width: 100%;
+
+    
+}
+
+#passo header .topics .title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    background: #0000001b;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+#passo header .topics .topic ion-icon {
+    font-size: 2rem;
+    min-width: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    min-height: 1.5rem;
+    color: #fff;
+    background: var(--gradient);
+    border-radius: .3rem;
+    padding: 1rem;
+}
+
+#passo header .topics .topic h3 {
+    color: #000;
+    font-weight: 600;
+    margin-top: -.5rem;
+    font-size: 1.6rem;
+}
+
+#passo header .topics .topic p {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+
+    position: absolute;
+    transform: translateY(-50%);
+    opacity: 0;
+
+    transition: all 500ms ease-in-out;
+}
+
+#passo header .topics .topic:hover p {
+    position: initial;
+        transform: translateY(0);
+        opacity: 1;
+}
+
+@media (min-width: 1080px) {
+    section#passo .content {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 8rem;
+        padding-block: 13rem;
+        overflow: hidden;
+        border-radius: 2rem;
+    }
+
+    section#passo img.bg {
+        height: 100%;
+        top: 0;
+    }
+
+    section#passo .content header {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    section#passo .content header h2 {
+    font-size: 4rem;
+}
+}

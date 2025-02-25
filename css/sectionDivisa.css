@@ -1,0 +1,55 @@
+
+#divisa {
+    padding-block: 0;
+    padding-bottom: 6rem;
+}
+
+#divisa .content {
+    background: var(--gradient);
+    border-radius: 2rem;
+    padding: 4rem;
+}
+
+#divisa .content .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#divisa .content .cards p {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+#divisa .content .cards img {
+    width: 7rem;
+    background: #ad7f3b;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+@media (min-width: 1080px) {
+    section#divisa .content {
+        padding: 6rem;
+    }
+
+    section#divisa .content .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#divisa .content .cards .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    section#divisa .content .cards .card p {
+        text-align: left;
+        font-size: 2rem;
+    }
+}

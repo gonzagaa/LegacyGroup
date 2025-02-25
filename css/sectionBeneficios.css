@@ -1,0 +1,83 @@
+#beneficios {
+    overflow: hidden;
+    position: relative;
+}
+
+#beneficios img.bg {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.6);
+    opacity: .4;
+}
+
+
+#beneficios .cards {
+    margin-top: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: start;
+}
+
+#beneficios .cards .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2rem;
+
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #b992574d;
+    background: linear-gradient(130deg, #000, #080601);
+}
+
+#beneficios .cards .card img {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+#beneficios .cards .card h3 {
+    font-size: 5rem;
+    font-family: 'Roaster', sans-serif;
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#beneficios .cards .card p {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+@media (min-width: 1080px)  {
+    section#beneficios .cards {
+        margin-top: 7rem;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#beneficios .cards .card {
+        height: 100%;
+        text-align: center;
+
+        flex-direction: column;
+        border-bottom: 2px solid #b9925769;
+        padding: 3rem;
+    }
+
+    section#beneficios .cards .card p {
+        text-align: center;
+    }
+}

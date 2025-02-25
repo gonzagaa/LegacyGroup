@@ -1,0 +1,93 @@
+#imigracao {
+    overflow: hidden;
+    position: relative;
+    padding-block: 10rem;
+}
+
+#imigracao img.bg {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#imigracao img.bg.mobile {
+    left: -10%;
+    filter: brightness(.9);
+}
+
+#imigracao .content {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+#imigracao img.bg.desktop {
+    display: none;
+}
+
+#imigracao header {
+    position: relative;
+    text-align: right;
+    width: 80%;
+}
+
+#imigracao header h2 {
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+#imigracao header .topics {
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2rem;
+}
+
+#imigracao header .topics .topic {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+#imigracao header .topics .topic ion-icon {
+    transform: rotate(180deg);
+    font-size: 2rem;
+    min-width: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    min-height: 1.5rem;
+    color: #fff;
+    background: #00000035;
+    border-radius: .3rem;
+    padding: 1rem;
+}
+
+#imigracao header .topics .topic p {
+    color: #000;
+    font-weight: 500;
+    text-align: right;
+    margin-top: -.5rem;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 1080px) {
+    section#imigracao img.bg.desktop {
+        display: inherit;
+    }
+
+    section#imigracao img.bg.mobile {
+        display: none;
+    }
+
+    section#imigracao header {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+}

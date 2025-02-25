@@ -1,0 +1,260 @@
+#home {
+    height: 70vh;
+    background: linear-gradient(to bottom, #000000 70%, #0e0e0e);
+    position: relative;
+    z-index: 25;
+  
+    transition: all 200ms ease-in-out;
+    margin-bottom: 0;
+  }
+  
+  #home::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #111111, transparent);
+    z-index: 3;
+  }
+  
+  #home img.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(.6);
+    object-fit: cover;
+    z-index: 2;
+  
+    mask-image: linear-gradient(to bottom, #000 60%, transparent);
+  }
+  
+  #home .wrapper {
+    position: relative;
+    height: 100%;
+  }
+  
+  #home .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  #home .text {
+    position: relative;
+    z-index: 4;
+  }
+  
+  #home span.span {
+    color: #fff;
+    font-size: 1.2rem;
+    background: var(--gradient);
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  #home h1 {
+    font-family: 'Roaster', sans-serif;
+    color: var(--color-text);
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 3.5rem;
+  
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  #home h1 span {
+    font-weight: 600;
+    position: relative;
+  }
+  
+  #home h1 span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5%;
+    width: 100%;
+    height: 50%;
+    background: var(--gradient);
+    opacity: .8;
+    z-index: -1;
+  }
+  
+  #home p {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #e9e9e9;
+  }
+  
+  #home p span {
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  #home .mouse {
+    width: 50px;
+    margin-top: 4rem;
+  }
+  
+  #home .image img {
+    width: 100%;
+  }
+  
+  #home .image img.mobile {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -57%);
+    width: 100%;
+    z-index: 1;
+  
+    mask-image: linear-gradient(to bottom, #000 80%, transparent);
+  }
+  
+  #home .image img.desktop {
+    display: none;
+  }
+  
+  #home a button {
+    margin-top: 2rem;
+  
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid #ffffffc1;
+  }
+  
+  #home .depoimentos {
+    margin-top: 2rem;
+  
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  #home .depoimentos img {
+    width: 10rem;
+  }
+  
+  #home .depoimentos p {
+    color: #fff;
+    margin-top: 0;
+    font-weight: 600;
+  }
+  
+  @media (min-width: 768px) {
+  }
+  
+  @media (min-width: 1080px) {
+    header#home {
+      background: var(--bg-black);
+      justify-content: center;
+      position: relative;
+  
+      height: 84vh;
+  
+      border-radius: 0;
+      box-shadow: initial;
+    }
+
+    header#home::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to right, #111111, transparent);
+    }
+  
+    header#home img.logo {
+      width: 17rem;
+    }
+  
+    header#home img.bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
+    header#home .image img.mobile {
+      display: none;
+    }
+  
+    header#home .image img.desktop {
+      opacity: .7;
+      display: inherit;
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    header#home .content {
+      text-align: left;
+      align-items: start;
+      justify-content: center;
+  
+  
+      gap: 3rem;
+  
+    }
+  
+    header#home .content .text {
+      width: 60%;
+      margin-top: initial;
+      margin-bottom: initial;
+  
+      text-align: left;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+  
+    }
+  
+    header#home .content h1 {
+      font-size: 4.5rem;
+      line-height: 1;
+  
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  
+    header#home .content h1 span {
+      display: block;
+    }
+  
+    header#home .content h1 span::before {
+      width: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  
+    header#home .content p {
+      font-size: 1.8rem;
+    }
+  
+    header#home a button { 
+      margin-top: 3rem;
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    header#home {
+      height: 84vh;
+    }
+    header#home .content h1 {
+      font-size: 6rem;
+    }
+  }
