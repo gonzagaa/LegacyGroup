@@ -60,7 +60,7 @@
 #cards .cards .card .text h2 {
     margin-top: 1rem;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 1.1;
     color: #fff;
     font-family: 'Roaster', sans-serif;
@@ -75,8 +75,12 @@
 }
 
 #cards .cards .card .text .topics .topic ion-icon {
-    width: 3rem;
-    height: 3rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    max-width: 1rem;
+    max-height: 1rem;
+    width: 1rem;
+    height: 1rem;
     font-size: 1.6rem;
     color: #fff;
 }
@@ -114,8 +118,7 @@
     }
 
     section#cards .cards .card .text .topics .topic ion-icon {
-        width: 2rem;
-        height: 2rem;
+        margin-top: .3rem;
         font-size: 1.5rem;
         opacity: .6;
     }

@@ -1,5 +1,10 @@
 #porque .cards .card {
     text-align: center;
+    padding: 0;
+}
+
+#porque header h2 {
+    margin-bottom: 0;
 }
 
 @media (min-width: 1080px) {

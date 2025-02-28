@@ -18,5 +18,7 @@
 @media (min-width: 1080px) {
     section#bandeiras .cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5rem;
+        padding-inline: 20%;
     }
 }

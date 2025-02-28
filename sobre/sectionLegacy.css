@@ -21,11 +21,6 @@
 #legacy .cards .card {
     width: 100%;
     text-align: left;
-
-    border: 1px solid #ffffff6c;
-    background: #161616;
-    padding: 2rem;
-    border-radius: 2rem;
 }
 
 #legacy .cards .card img {
@@ -37,6 +32,8 @@
     font-size: 2.2rem;
     color: #fff;
     margin-bottom: 1rem;
+    font-family: 'Roaster', sans-serif;
+    font-weight: 300;
 }
 
 #legacy .cards .card p {
@@ -54,5 +51,11 @@
     section#legacy .content .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    section#legacy header {
+        display: flex;
+        align-items: start;
+        text-align: left;
     }
 }

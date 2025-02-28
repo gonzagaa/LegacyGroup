@@ -4,3 +4,11 @@
     height: 30rem;
     border-radius: 2rem;
 }
+
+@media (min-width: 1080px) {
+    section#localizacao header {
+        text-align: left;
+        display: flex;
+        align-items: start;
+    }
+}

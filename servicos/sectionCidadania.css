@@ -100,27 +100,33 @@
     
 
     section#cidadania .content {
-        align-items: right;
-        justify-content: right;
+        align-items: start;
+        justify-content: start;
     }
 
     section#cidadania header {
         display: flex;
         flex-direction: column;
         align-items: end;
-        width: 70%;
+        justify-content: end;
+        width: 100%;
+    }
+
+    section#cidadania header h2 {
+        margin-right: 4rem;
     }
 
     section#cidadania header .topics {
-        align-items: end;
+        align-items: start;
+        width: 40%;
     }
 
     section#cidadania header .topics .topic {
-        flex-direction: row-reverse;
+        flex-direction: row;
     }
 
     section#cidadania header .topics .topic p {
-        text-align: right;
+        text-align: left;
         font-size: 1.6rem;
     }
 

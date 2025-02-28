@@ -58,15 +58,12 @@
 }
 
 #passo header .topics .topic ion-icon {
-    font-size: 2rem;
-    min-width: 1.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    min-height: 1.5rem;
-    color: #fff;
-    background: var(--gradient);
-    border-radius: .3rem;
-    padding: 1rem;
+    font-size: 1rem;
+    min-width: .5rem;
+    width: .5rem;
+    height: .5rem;
+    min-height: .5rem;
+    color: #000000;
 }
 
 #passo header .topics .topic h3 {
@@ -95,6 +92,23 @@
         opacity: 1;
 }
 
+#passo header a button {
+    margin-top: 2rem;
+    color: #000;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid #ffffffc1;
+  }
+
+#passo header button:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+    box-shadow: 0 20px 30px #b9925721;
+    background: rgba(255, 255, 255, 0.122);
+}
+  
+
 @media (min-width: 1080px) {
     section#passo .content {
         position: relative;
@@ -118,6 +132,6 @@
     }
 
     section#passo .content header h2 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 }

@@ -16,7 +16,7 @@ header {
 header h2 {
     margin-top: 1rem;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.1;
     color: #fff;
     font-family: 'Roaster', sans-serif;
@@ -24,10 +24,6 @@ header h2 {
 
 header h2 span {
     font-family: 'Roaster', sans-serif;
-    font-weight: 700;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 header p {
@@ -43,7 +39,7 @@ header p span {
 
 @media (min-width: 1080px) {
     header h2 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     header p {

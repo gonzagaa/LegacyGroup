@@ -25,10 +25,6 @@
 
 #divisa .content .cards img {
     width: 7rem;
-    background: #ad7f3b;
-    padding: 2rem;
-    border-radius: 1rem;
-    margin-bottom: .5rem;
 }
 
 @media (min-width: 1080px) {

@@ -43,13 +43,13 @@
     margin-block: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
     gap: 2rem;
 }
 
 #imigracao header .topics .topic {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
     text-align: left;
@@ -57,15 +57,12 @@
 
 #imigracao header .topics .topic ion-icon {
     transform: rotate(180deg);
-    font-size: 2rem;
-    min-width: 1.5rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    min-height: 1.5rem;
-    color: #fff;
-    background: #00000035;
-    border-radius: .3rem;
-    padding: 1rem;
+    font-size: 1rem;
+    min-width: .5rem;
+    width: .5rem;
+    height: .5rem;
+    min-height: .5rem;
+    color: #000000;
 }
 
 #imigracao header .topics .topic p {
@@ -85,9 +82,16 @@
         display: none;
     }
 
+    section#imigracao header h2 {
+        font-weight: 300;
+        width: 70%;
+    }
+
     section#imigracao header {
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
+        text-align: left;
+        margin-left: 50%;
     }
 }
